@@ -1,0 +1,165 @@
+/* pages/setting/index.wxss */
+
+page {
+    height: 100vw;
+    width: 100vw;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+}
+
+.ip_text {
+    color: #eeee33;
+    font-size: 14pt;
+
+    position: absolute;
+    left: 5vw;
+    top: 5vw;
+}
+
+
+.ip {
+    width: 90vw;
+    height: 10vw;
+
+    position: absolute;
+    top: 15vw;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    background-color: gray;
+    border: 3px solid #eeee33;
+}
+
+.ip_input {
+    position: relative;
+    top: 2vw;
+    left: 2vw;
+    font-size: 14pt;
+}
+
+.interval_text {
+    color: #eeee33;
+    font-size: 14pt;
+
+    position: absolute;
+    left: 5vw;
+    top: 35vw;
+}
+
+.interval {
+    width: 90vw;
+    height: 10vw;
+
+    position: absolute;
+    top: 45vw;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    background-color: gray;
+    border: 3px solid #eeee33;
+}
+
+.interval_input {
+    position: relative;
+    top: 2vw;
+    left: 2vw;
+    font-size: 14pt;
+}
+
+.screen_text {
+    color: #eeee33;
+    font-size: 14pt;
+
+    position: absolute;
+    left: 5vw;
+    top: 65vw;
+}
+
+.screen {
+    color: #eeee33;
+    font-size: 14pt;
+
+    position: absolute;
+    left: 5vw;
+    top: 75vw;
+}
+
+.strat_text {
+    color: #eeee33;
+    font-size: 14pt;
+
+    position: absolute;
+    left: 5vw;
+    top: 90vw;
+}
+
+.strat {
+    width: 90vw;
+    height: 10vw;
+
+    position: absolute;
+    top: 100vw;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    background-color: gray;
+    border: 3px solid #eeee33;
+}
+
+.strat_input {
+    position: relative;
+    top: 2vw;
+    left: 2vw;
+    font-size: 14pt;
+}
+
+.save {
+    width: 90vw;
+    height: 10vw;
+
+    position: absolute;
+    bottom: 5vw;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    background-color: #eeee33;
+    border: 3px solid #eeee33;
+    text-align: center;
+}
+
+.save_text {
+    font-size: 14pt;
+    position: relative;
+    top: 1.5vw;
+}
+
+.clear {
+    width: 90vw;
+    height: 10vw;
+
+    position: absolute;
+    bottom: 20vw;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    background-color: gray;
+    border: 3px solid gray;
+    text-align: center;
+}
+
+.clear_text {
+    font-size: 14pt;
+    position: relative;
+    top: 1.5vw;
+}

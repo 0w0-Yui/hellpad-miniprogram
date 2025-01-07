@@ -1,0 +1,43 @@
+/* pages/strats/index.wxss */
+page {
+    width: 100vw;
+    height: 100vw;
+    background-color: #222222;
+}
+
+.strats {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(4, 20vw); */
+
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.strat {
+    width: 20vw;
+    height: 20vw;
+    margin: 2vw;
+}
+
+.strat_box {
+    width: 20vw;
+    height: 20vw;
+    margin: 2vw;
+}
+
+.hint {
+    width: 100vw;
+    height: 488vw;
+    position: absolute;
+    opacity: 25%;
+    background-color: black;
+}

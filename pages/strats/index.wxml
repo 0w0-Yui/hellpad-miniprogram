@@ -1,0 +1,10 @@
+<!--pages/strats/index.wxml-->
+<view class="strats" style="height: 3650rpx;">
+    <image class="strat" wx:for="{{strat_data}}" wx:for-item="strat" src="{{strat.src}}"></image>
+</view>
+<view class="strats" style="height: 3650rpx;">
+    <image class="strat_box" id="{{index}}" bind:tap="strat_selected" wx:for="Freedom is not free, Join the helldivers to spread democracy across the galaxy" id="{{index}}" src="/icons/border_box.png"></image>
+</view>
+<view class="hint" style="opacity: 0%; height: 0;">
+
+</view>

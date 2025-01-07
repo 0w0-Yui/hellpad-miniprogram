@@ -1,0 +1,29 @@
+<!--pages/setting/index.wxml-->
+<text class="ip_text">主机IP</text>
+<view class="ip">
+    <input class="ip_input" value="{{current_ip}}" bindinput="ip_change"></input>
+</view>
+<text class="interval_text">发射间隔</text>
+<view class="interval">
+    <input class="interval_input" type="number" value="{{interval}}" bindinput="interval_change"></input>
+</view>
+<text class="screen_text">屏幕朝向</text>
+<view class="screen">
+    <radio-group class="screen_radio" bindchange="screen_change">
+        <text>竖向 </text>
+        <radio color="#808080" checked="{{lat_checked}}" value="lat" />
+        <text>横向 </text>
+        <radio color="#808080" checked="{{ver_checked}}" value="ver" />
+    </radio-group>
+</view>
+<!-- <text class="strat_text">战备按键</text>
+<view class="strat">
+    <input class="strat_input" value="{{strat_key}}" bindinput="strat_change"></input>
+</view> -->
+<!-- <text class="screen_text">屏幕朝向</text> -->
+<view class="clear" bind:tap="clear_click">
+    <text class="clear_text">清除战备</text>
+</view>
+<view class="save" bind:tap="save_click">
+    <text class="save_text">保存设置</text>
+</view>

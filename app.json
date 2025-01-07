@@ -1,0 +1,19 @@
+{
+    "entryPagePath": "pages/boot/index",
+    "pages": [
+        "pages/boot/index",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/strats/index",
+        "pages/setting/index"
+    ],
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "绝地潜兵战备球",
+        "navigationBarBackgroundColor": "#222222"
+    },
+    "style": "v2",
+    "componentFramework": "glass-easel",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

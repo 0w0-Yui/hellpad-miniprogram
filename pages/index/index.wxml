@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view style="{{}}">
+    <view class="info" style="{{info_style}}">
+        <image id="always-top" class="arrow" style="{{info_arrow_style}}" src="/icons/up_arrow.png"></image>
+        <text id="always-top-text">!!!此面朝向超级地球!!!</text>
+        <image id="always-top" class="arrow" style="{{info_arrow_style}}" src="/icons/up_arrow.png"></image>
+        <!-- <text id="always-top-text">!!!此面朝向超级地球!!!</text>
+    <image id="always-top" class="arrow" style="width: 10pt; height: 10pt; " src="/icons/up_arrow.png"></image>
+    <text id="always-top-text">!!!此面朝向超级地球!!!</text>
+    <image id="always-top" class="arrow" style="width: 10pt; height: 10pt; " src="/icons/up_arrow.png"></image> -->
+    </view>
+</view>
+<view class="current_master" style="{{current_master_style}}">
+    <view class="current" style="{{current_style}}">
+        <image class="cmd" wx:for="{{current_cmd}}" wx:for-index="index" src="{{current_cmd[index].src}}" style="{{current_cmd[index].style}}" />
+    </view>
+</view>
+<view class="setting" style="{{setting_style}}">
+    <text class="setting_text" style="{{setting_text_style}}" bind:tap="setting_click">设置</text>
+</view>
+<view class="remoter" style="{{remoter_style}}">
+    <image id="up" class="arrow" bind:touchstart="arrow_click" bind:touchend="arrow_click_up" src="{{arrow_img[0]}}" style="position: absolute; top: 5%;"></image>
+    <image id="left" class="arrow" bind:touchstart="arrow_click" bind:touchend="arrow_click_up" style="transform: rotate(-90deg); position: absolute; left: 5%;" src="{{arrow_img[1]}}"></image>
+    <image id="right" class="arrow" bind:touchstart="arrow_click" bind:touchend="arrow_click_up" style="transform: rotate(90deg); position: absolute; right: 5%;" src="{{arrow_img[2]}}"></image>
+    <image id="down" class="arrow" mut-bind:touchstart="arrow_click" capture-bind:touchend="arrow_click_up" style="transform: rotate(180deg); position: absolute; bottom: 5%;" src="{{arrow_img[3]}}"></image>
+</view>
+<view class="strats">
+    <image wx:for="{{strats}}" style="{{strat_style}}" wx:for-item="strat" id="start{{index}}" class="strat" src="{{strat.src}}"></image>
+    <!-- <image id="strat1" class="strat" src="{{strats[0][1]}}"></image>
+    <image id="strat2" class="strat" src="{{strats[1][1]}}"></image>
+    <image id="strat3" class="strat" src="{{strats[2][1]}}"></image>
+    <image id="strat4" class="strat" src="{{strats[3][1]}}"></image>
+    <image id="strat5" class="strat" src="{{strats[4][1]}}"></image>
+    <image id="strat6" class="strat" src="{{strats[5][1]}}"></image>
+    <image id="strat7" class="strat" src="{{strats[6][1]}}"></image>
+    <image id="strat8" class="strat" src="{{strats[7][1]}}"></image> -->
+</view>
+<view class="strats">
+    <image bind:tap="strat_click" bind:longtap="strat_hold" wx:for="01234567" id="{{index}}" class="strat_box" src="/icons/border_box.png"></image>
+    <!-- <cover-image id="box1" class="strat_box" src="/icons/border_box.png"></cover-image>
+    <cover-image id="box2" class="strat_box" src="/icons/border_box.png"></cover-image>
+    <cover-image id="box3" class="strat_box" src="/icons/border_box.png"></cover-image>
+    <cover-image id="box4" class="strat_box" src="/icons/border_box.png"></cover-image>
+    <cover-image id="box5" class="strat_box" src="/icons/border_box.png"></cover-image>
+    <cover-image id="box6" class="strat_box" src="/icons/border_box.png"></cover-image>
+    <cover-image id="box7" class="strat_box" src="/icons/border_box.png"></cover-image>
+    <cover-image id="box8" class="strat_box" src="/icons/border_box.png"></cover-image> -->
+</view>

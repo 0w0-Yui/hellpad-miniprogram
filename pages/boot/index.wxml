@@ -1,0 +1,3 @@
+<!--pages/boot/index.wxml-->
+<image class="logo" src="/icons/startup.png" mode="aspectFit"/>
+<text class="text">超级地球研发部 - 0w0-Yui</text>
