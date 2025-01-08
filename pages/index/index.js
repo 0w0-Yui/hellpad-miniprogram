@@ -206,7 +206,7 @@ Page({
         _cmd = _cmd + input;
         // console.log(_cmd);
         this.display_current(this.cmd_to_id(input));
-        // this.send_key(input);
+        this.send_key(input);
         var is_bad = true;
         for (var i in strat_data.data) {
             if (_cmd == strat_data.data[i].cmd) {
