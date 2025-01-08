@@ -1,16 +1,10 @@
 <!--index.wxml-->
-<view style="{{}}">
+<view class="current_master" style="{{current_master_style}}">
     <view class="info" style="{{info_style}}">
         <image id="always-top" class="arrow" style="{{info_arrow_style}}" src="/icons/up_arrow.png"></image>
         <text id="always-top-text">!!!此面朝向超级地球!!!</text>
         <image id="always-top" class="arrow" style="{{info_arrow_style}}" src="/icons/up_arrow.png"></image>
-        <!-- <text id="always-top-text">!!!此面朝向超级地球!!!</text>
-    <image id="always-top" class="arrow" style="width: 10pt; height: 10pt; " src="/icons/up_arrow.png"></image>
-    <text id="always-top-text">!!!此面朝向超级地球!!!</text>
-    <image id="always-top" class="arrow" style="width: 10pt; height: 10pt; " src="/icons/up_arrow.png"></image> -->
     </view>
-</view>
-<view class="current_master" style="{{current_master_style}}">
     <view class="current" style="{{current_style}}">
         <image class="cmd" wx:for="{{current_cmd}}" wx:for-index="index" src="{{current_cmd[index].src}}" style="{{current_cmd[index].style}}" />
     </view>

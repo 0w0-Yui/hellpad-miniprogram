@@ -27,7 +27,7 @@ Page({
         // strat imgs
         strats: [{}, {}, {}, {}, {}, {}, {}, {}],
         current_cmd: [],
-        current_style: "",
+        current_style: "border: 3px solid #eeee33;",
         info_style: "",
         info_arrow_style: "width: 22pt; height: 22pt;",
         setting_style: "",
@@ -57,7 +57,7 @@ Page({
         interval = wx.getStorageSync("interval");
         if (interval == "") {
             console.log("default interval 200");
-            interval = 200;
+            interval = 150;
             wx.setStorageSync("interval", interval);
         }
 
@@ -81,7 +81,7 @@ Page({
             return;
         }
         if (_cmd.length == 0) {
-            this.send_first();
+            // this.send_first();
         }
         var btn_id = event.currentTarget.id;
         var num_id = this.dir_to_id(btn_id);
@@ -206,7 +206,7 @@ Page({
         _cmd = _cmd + input;
         // console.log(_cmd);
         this.display_current(this.cmd_to_id(input));
-        this.send_key(input);
+        // this.send_key(input);
         var is_bad = true;
         for (var i in strat_data.data) {
             if (_cmd == strat_data.data[i].cmd) {
@@ -303,7 +303,7 @@ Page({
                     info_arrow_style: "width: 22pt; height: 22pt;",
                     setting_style: "",
                     setting_text_style: "",
-                    current_master_style: "",
+                    current_master_style: "top: 0vw;",
                     remoter_style: "",
                     strat_style: ""
                 });
@@ -311,12 +311,12 @@ Page({
             case "ver":
                 console.log("ver screen");
                 this.setData({
-                    info_style: "transform: rotate(90deg); left: 57.5vw; top: 64vw; width: 80vw; font-size: 7pt;",
+                    info_style: "top: 4vw; font-size: 7pt; right: 0vw;",
                     info_arrow_style: "width: 10pt; height: 10pt;",
                     setting_style: "transform: rotate(90deg); height: 18vw; right: 5.9vw; top: 1vw;",
                     setting_text_style: "top: 5vw;",
-                    current_master_style: "transform: rotate(90deg); bottom: 85.5vw; left: 58vw; height: 18vw; width: 87vw;",
-                    remoter_style: "transform: rotate(90deg); width: 110vw; left: -23vw; bottom: 47vw;",
+                    current_master_style: "transform: rotate(90deg); top: 0vw; bottom: 28vw; left: 58vw; height: 18vw; width: 87vw;",
+                    remoter_style: "transform: rotate(90deg); width: 110vw; left: -23vw; bottom: 28vw; top: 0vw;",
                     strat_style: "transform: rotate(90deg);"
                 });
                 break;
